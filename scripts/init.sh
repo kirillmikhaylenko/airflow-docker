@@ -15,4 +15,4 @@ airflow users create \
           -p password
 
 # Запуск шедулера и вебсервера
-airflow scheduler & airflow api-server --port 8080
+airflow scheduler & airflow api-server --port 8080 & airflow dag-processor & airflow triggerer
